@@ -1,7 +1,26 @@
 aid: intrro
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/intrro.png
 name: Intrro
-description: Intrro is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Intrro is an employee referral recruiting platform that turns a company's collective
+  network into a warm-introduction hiring engine. Its AI-assisted software analyzes employees'
+  LinkedIn and email connections to surface candidates likely to be known across the team, then
+  automates referral requests, gamified engagement, referral-bonus tracking, approvals and payouts
+  from a single dashboard. Intrro integrates with major applicant tracking systems and collaboration
+  tools including Greenhouse, Lever, Workday, iCIMS, Jobvite, Glassdoor, Slack and Microsoft Teams,
+  and exposes API keys through an in-app Dev Center for those integrations. Founded in 2020 and backed
+  by 500 Global, the company operates via Ehalah FZ-LLC and hosts its platform on AWS under
+  GDPR-aligned data practices.
 url: https://raw.githubusercontent.com/api-evangelist/intrro/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +30,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Recruiting
+- HR Tech
+- Employee Referrals
+- Talent Acquisition
+- Hiring
+- ATS Integration
+- SaaS
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +47,34 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/intrro-domain-security.yml
 - type: Website
   url: https://intrro.com
+- type: Documentation
+  url: https://intrro.stonly.com
+- type: Support
+  url: https://intrro.stonly.com
+- type: ChangeLog
+  url: https://www.intrro.com/product-updates
+- type: Blog
+  url: https://www.intrro.com/news
+- type: Pricing
+  url: https://www.intrro.com/pricing
+- type: SignUp
+  url: https://www.intrro.com/request-a-demo
+- type: Login
+  url: https://www.intrro.com/login
+- type: Security
+  url: https://www.intrro.com/security
+- type: TermsOfService
+  url: https://www.intrro.com/terms-of-service
+- type: PrivacyPolicy
+  url: https://www.intrro.com/privacy-policy
+- type: LinkedIn
+  url: https://www.linkedin.com/company/intrro
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
